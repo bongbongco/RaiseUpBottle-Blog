@@ -1,9 +1,12 @@
 import Head from 'next/head'
+import Script from "next/script"
 import * as React from 'react'
 
 import * as types from 'lib/types'
 import * as config from 'lib/config'
 import { getSocialImageUrl } from 'lib/get-social-image-url'
+
+const GOOGLE_ANALYTICS = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS; 
 
 export const PageHead: React.FC<
   types.PageProps & {
@@ -79,6 +82,16 @@ export const PageHead: React.FC<
       <meta property='og:title' content={title} />
       <meta name='twitter:title' content={title} />
       <title>{title}</title>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS}`} strategy="afterInteractive"/>
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${GOOGLE_ANALYTICS});
+        `}
+      </Script>
     </Head>
   )
 }
