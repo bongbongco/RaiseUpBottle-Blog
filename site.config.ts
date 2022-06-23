@@ -17,6 +17,7 @@ export default siteConfig({
   description: '인생의 풍미를 더하는 좋은 사람들과 나누는 더 많은 이야기',
 
   // social usernames (optional)
+  instagram: 'raiseupbottle',
   // twitter: 'transitive_bs',
   // github: 'transitive-bullshit',
   // linkedin: 'fisch2',
