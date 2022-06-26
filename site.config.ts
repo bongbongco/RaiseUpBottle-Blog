@@ -22,7 +22,7 @@ export default siteConfig({
   // github: 'transitive-bullshit',
   // linkedin: 'fisch2',
   // newsletter: '#', // optional newsletter URL
-  // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
+  youtube: 'channel/UCcHl6p6pmcorDK8SqgEAAKw', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
   // page-specific values will override these site-wide defaults
@@ -52,6 +52,11 @@ export default siteConfig({
   // important pages
   navigationStyle: 'default'
   // navigationStyle: 'custom',
+  // navigationLinks: [
+  //   {
+  //     title: 'About',
+  //     pageId: 'f1199d37579b41cbabfc0b5174f4256a'
+  //   },
   // navigationLinks: [
   //   {
   //     title: 'About',
